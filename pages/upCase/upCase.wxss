@@ -1,0 +1,43 @@
+.orig{
+    font-size: 80rpx;
+    text-align: right;
+}
+.word{
+    text-align: left;
+    font-size: 60rpx;
+    border-top: 1px solid #eee;
+    position: relative;
+}
+.wt{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.btn-list{
+    display: flex;
+}
+.group{
+    flex: 3;
+}
+.right{
+    flex: 1;
+}
+.btn{
+    float: left;
+    height: 200rpx;
+    line-height: 200rpx;
+    width:33.33%;
+}
+.zero{
+    float: left;
+    height: 200rpx;
+    line-height:200rpx;
+    width:375rpx; 
+}
+button{
+    border-radius: 0;
+}
+button::after{
+    border: 1px solid #eee;
+    border-radius: 0;
+}

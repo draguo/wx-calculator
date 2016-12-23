@@ -1,0 +1,34 @@
+<view class="orig" 
+    style="height:{{ wheight/4-1 }}px; line-height:{{ wheight/4-1 }}px;">
+    {{ orig }}
+</view>
+<view class="word" 
+    style="height:{{ wheight/4 }}px;">
+    <text class="wt">{{ word }}</text>
+</view>
+<view class="btn-list">
+<view class="group">
+    <button class="btn" 
+        style="height:{{ wheight/8 }}px; line-height:{{ wheight/8 }}px;"
+        wx:for="{{ numberList }}" bindtap="press" 
+        data-num="{{ item }}">
+        {{ item }}
+    </button>
+    <button class="zero"
+        style="height:{{ wheight/8 }}px; line-height:{{ wheight/8 }}px;"
+        bindtap="press" data-num="0">
+        0
+    </button>
+    <button class="btn"
+        style="height:{{ wheight/8 }}px; line-height:{{ wheight/8 }}px;"
+        bindtap="press" data-num=".">
+        .
+    </button>
+</view>
+<view class="right">
+    <button class="ac" style="height:{{ wheight/4 }}px; line-height:{{ wheight/4 }}px;"         
+        bindtap="ac">AC</button>
+    <button class="back" style="height:{{ wheight/4 }}px; line-height:{{ wheight/4 }}px;" 
+        bindtap="back">后退</button>
+</view>
+</view>
