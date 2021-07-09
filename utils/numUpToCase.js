@@ -12,7 +12,7 @@ function digitUppercase(n) {
     n = Math.abs(n);
     var s = '';
     for (var i = 0; i < fraction.length; i++) {
-        s += (digit[Math.floor(n * 10 * Math.pow(10, i)) % 10] + fraction[i]).replace(/零./, '');
+        s += (digit[Math.floor(parseFloat(n * 10).toFixed(fraction.length-i) * Math.pow(10, i)) % 10] + fraction[i]).replace(/零./, '');
     }
     s = s || '整';
     n = Math.floor(n);
